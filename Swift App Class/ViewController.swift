@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
         if theLabel.text == "Hello World!" {
@@ -19,13 +20,7 @@ class ViewController: UIViewController {
         } else {
             theLabel.text = "Hello World!"
         }
-        
-        tapCount = tapCount + 1
-        
-        if tapCount == 10 {
-            theLabel.text = "You tapped the button 10 times"
-        }
-        print("Button tapped \(tapCount)")
+        theLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     
     @IBAction func buttonTwo(_ sender: Any) {

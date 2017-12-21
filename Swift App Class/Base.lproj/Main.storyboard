@@ -38,19 +38,43 @@
                                     <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39O-OK-DpN"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNY-ow-Rlx">
+                                <rect key="frame" x="137.5" y="186" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="euc-DD-BtM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uxo-Tr-BYC">
+                                <rect key="frame" x="137.5" y="224" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4zS-gt-B6A"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6i0-ms-or4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9au-Lt-HOX"/>
+                            <constraint firstItem="lNY-ow-Rlx" firstAttribute="top" secondItem="uOi-xW-ZsA" secondAttribute="bottom" constant="31" id="IIR-Bi-YyI"/>
+                            <constraint firstItem="Uxo-Tr-BYC" firstAttribute="top" secondItem="lNY-ow-Rlx" secondAttribute="bottom" constant="8" id="Svf-8p-4OJ"/>
                             <constraint firstItem="uOi-xW-ZsA" firstAttribute="top" secondItem="6i0-ms-or4" secondAttribute="bottom" constant="14" id="W6W-Eq-baQ"/>
                             <constraint firstItem="6i0-ms-or4" firstAttribute="top" secondItem="TR6-c6-HrU" secondAttribute="bottom" constant="20" id="XGh-u7-hqg"/>
                             <constraint firstItem="TR6-c6-HrU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ach-Yg-gzc"/>
+                            <constraint firstItem="Uxo-Tr-BYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="azm-dF-0CB"/>
                             <constraint firstItem="TR6-c6-HrU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jgH-ih-AXo"/>
                             <constraint firstItem="uOi-xW-ZsA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAh-5O-8P4"/>
+                            <constraint firstItem="lNY-ow-Rlx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xWx-Zf-sP1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="lNY-ow-Rlx" id="GcE-aK-FY7"/>
+                        <outlet property="text2" destination="Uxo-Tr-BYC" id="Vbm-EY-3fJ"/>
                         <outlet property="theLabel" destination="TR6-c6-HrU" id="kce-BW-kXJ"/>
                     </connections>
                 </viewController>
