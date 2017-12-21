@@ -32,8 +32,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOi-xW-ZsA">
-                                <rect key="frame" x="152" y="125" width="71" height="30"/>
-                                <state key="normal" title="What Now"/>
+                                <rect key="frame" x="173" y="125" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39O-OK-DpN"/>
                                 </connections>
@@ -56,11 +56,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-Uk-LSq">
+                                <rect key="frame" x="224" y="125" width="60" height="30"/>
+                                <state key="normal" title="Subtract"/>
+                                <connections>
+                                    <action selector="buttonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODc-v3-IGS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6i0-ms-or4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9au-Lt-HOX"/>
                             <constraint firstItem="lNY-ow-Rlx" firstAttribute="top" secondItem="uOi-xW-ZsA" secondAttribute="bottom" constant="31" id="IIR-Bi-YyI"/>
+                            <constraint firstItem="I3Q-Uk-LSq" firstAttribute="leading" secondItem="uOi-xW-ZsA" secondAttribute="trailing" constant="21" id="KzV-Wm-4Lb"/>
                             <constraint firstItem="Uxo-Tr-BYC" firstAttribute="top" secondItem="lNY-ow-Rlx" secondAttribute="bottom" constant="8" id="Svf-8p-4OJ"/>
                             <constraint firstItem="uOi-xW-ZsA" firstAttribute="top" secondItem="6i0-ms-or4" secondAttribute="bottom" constant="14" id="W6W-Eq-baQ"/>
                             <constraint firstItem="6i0-ms-or4" firstAttribute="top" secondItem="TR6-c6-HrU" secondAttribute="bottom" constant="20" id="XGh-u7-hqg"/>
@@ -68,6 +76,7 @@
                             <constraint firstItem="Uxo-Tr-BYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="azm-dF-0CB"/>
                             <constraint firstItem="TR6-c6-HrU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jgH-ih-AXo"/>
                             <constraint firstItem="uOi-xW-ZsA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAh-5O-8P4"/>
+                            <constraint firstItem="I3Q-Uk-LSq" firstAttribute="top" secondItem="6i0-ms-or4" secondAttribute="bottom" constant="14" id="qr5-D8-Ydc"/>
                             <constraint firstItem="lNY-ow-Rlx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xWx-Zf-sP1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

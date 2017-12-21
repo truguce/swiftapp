@@ -14,31 +14,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var text1: UITextField!
     @IBOutlet weak var text2: UITextField!
     
+    var addition :Bool = true
     @IBAction func buttonTapped(_ sender: Any) {
-        if theLabel.text == "Hello World!" {
-                theLabel.text = "Goodbye!!!"
+        if addition {
+            theLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
         } else {
-            theLabel.text = "Hello World!"
+            theLabel.text = "Anser: \(Double(text1.text!)! - Double(text2.text!)!)"
         }
-        theLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     
     @IBAction func buttonTwo(_ sender: Any) {
-        theLabel.text = "Buttons are cool!"
+        addition = true
+        theLabel.text = "Addition"
     }
     
+    @IBAction func buttonThree(_ sender: Any) {
+        addition = false
+        theLabel.text = "Subtract"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
